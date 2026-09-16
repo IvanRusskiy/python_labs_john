@@ -1,7 +1,7 @@
 b = int(input('in_1:'))
 h = []
 s = 2
-while True:
+while s <= b + 1:
     a = input('in_' + str(s) + ':').split()
     s += 1
     if '-' in a:
