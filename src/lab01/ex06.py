@@ -1,15 +1,17 @@
+b = int(input('in_1:'))
 h = []
+s = 2
 while True:
-    a = input(), int(input()), input(bool)
-    if a[0] == '' and a[1] == 0:
+    a = input('in_' + str(s) + ':').split()
+    s += 1
+    if '-' in a:
         break
     h.append(a)
 c = 0
 k = 0
 for i in h:
-    if i[2] == 'True':
+    if i[3] == 'True':
         c += 1
     else:
         k += 1
 print(c,k)
-print(h)
