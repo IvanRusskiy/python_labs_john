@@ -2,7 +2,7 @@
 ### №1
 ![](https://github.com/IvanRusskiy/python_labs_john/blob/8de173ce0974f6e60efd27c9dace965581336fab/images/lab01/ex01.png)
 ### №2
-![](https://github.com/IvanRusskiy/python_labs_john/blob/23d7b56359de3e5fa7fa05988f6f7789d9cc5911/images/lab01/ex02.png)
+![](https://github.com/IvanRusskiy/python_labs_john/blob/77a5667346c3e15f45d84c9e9073bb29056d06e2/images/lab01/ex02.png)
 ### №3
 ![](https://github.com/IvanRusskiy/python_labs_john/blob/8de173ce0974f6e60efd27c9dace965581336fab/images/lab01/ex03.png)
 ### №4
