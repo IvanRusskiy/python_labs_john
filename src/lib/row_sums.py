@@ -1,4 +1,7 @@
 def row_sums(mat: list[list[float | int]]) -> list[float]:
+    '''
+    возвращает сумму строк матрицы
+    '''
     result = []
     len_str = []
     if mat == []:

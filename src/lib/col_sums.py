@@ -1,4 +1,7 @@
 def col_sums(mat: list[list[float | int]]) -> list[float]:
+    '''
+    возвращает сумму столбцов матрицы
+    '''
     if mat == []:
         return 0
     result = [0]*len(mat[0])
