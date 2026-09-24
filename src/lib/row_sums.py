@@ -1,11 +1,11 @@
-def row_sums(h):
-    l = []
-    j = []
-    if h == []:
+def row_sums(mat: list[list[float | int]]) -> list[float]:
+    result = []
+    len_str = []
+    if mat == []:
         return 0
-    for i in range(len(h)):
-        l.append(sum(h[i]))
-        j.append(len(h[i]))
-    if len(set(j)) != 1:
-        raise ValueError
-    return l
+    for i in range(len(mat)):
+        result.append(sum(mat[i]))
+        len_str.append(len(mat[i]))
+    if len(set(len_str)) != 1:
+        raise ValueError("рваная матрица")
+    return result

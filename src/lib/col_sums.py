@@ -1,12 +1,12 @@
-def col_sums(h):
-    if h == []:
+def col_sums(mat: list[list[float | int]]) -> list[float]:
+    if mat == []:
         return 0
-    l = [0]*len(h[0])
-    k = []
-    for i in h:
-        k.append(len(i))
+    result = [0]*len(mat[0])
+    len_str = []
+    for i in mat:
+        len_str.append(len(i))
         for j in range(len(i)):
-            l[j] += i[j]
-    if len(set(k)) != 1:
-        raise ValueError
-    return l
+            result[j] += i[j]
+    if len(set(len_str)) != 1:
+        raise ValueError("рваная матрица")
+    return result
