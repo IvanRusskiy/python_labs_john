@@ -3,11 +3,19 @@ def format_record(rec: tuple[str, str, float]) -> str:
     преобразует кортеж в строку
     выдает ошибку при пустой строке или неправильном типе GPA
     '''
+    if len(rec) != 3:
+         raise ValueError("не правильная длина кортежа")
+    if type(rec) != tuple:
+        raise TypeError("не тот тип входных данных")
+    if rec[0] == "" or rec[1] == "":
+            raise ValueError("путая строка")
+    if type(rec[2]) != float:
+            raise TypeError("неверный тип GPA")
     result = ''
     fio = rec[0].split()
     group = rec[1]
     gpa = rec[2]
-    if fio == '' or group == '':
+    if fio == "" or group == "":
         raise ValueError("путая строка")
     if type(gpa) != float:
         raise TypeError("неверный тип GPA")
@@ -28,4 +36,4 @@ print(format_record(("Иванов Иван Иванович", "        BIVT-25"
 print(format_record(("Петров Пётр", "IKBO-12", 5.0)))
 print(format_record(("Петров Пётр Петрович", "IKBO-12", 5.0)))
 print(format_record(("  сидорова  анна   сергеевна ", "ABB-01", 3.999)))
-print(format_record(("", "ABB-01", 3.999)))
+print(format_record((" ", "ABB-01", 3)))
