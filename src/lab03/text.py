@@ -10,10 +10,10 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
         text = text.replace('ё','е')
     return text
 
-print(normalize("ПрИвЕт\nМИр\t",casefold=True,yo2e=False))
-print(normalize("ёжик, Ёлка",casefold=True,yo2e=True))
-print(normalize("Hello\r\nWorld",casefold=True,yo2e=False))
-print(normalize("  двойные   пробелы  ",casefold=False,yo2e=False))
+# print(normalize("ПрИвЕт\nМИр\t",casefold=True,yo2e=False))
+# print(normalize("ёжик, Ёлка",casefold=True,yo2e=True))
+# print(normalize("Hello\r\nWorld",casefold=True,yo2e=False))
+# print(normalize("  двойные   пробелы  ",casefold=False,yo2e=False))
 
 def tokenize(text: str) -> list[str]:
     a = range(32,48) or range(58,65) or range(91,97) or range(123,126) and range(150)

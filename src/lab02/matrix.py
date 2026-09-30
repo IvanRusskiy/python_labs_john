@@ -56,7 +56,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
         raise ValueError("рваная матрица")
     return result
 
-# print(col_sums([[1, 2, 3], [4, 5, 6]]))
-# print(col_sums([[-1, 1], [10, -10]]))
-# print(col_sums([[0, 0], [0, 0]]))
-# print(col_sums([[1, 2], [3]]))
+print(col_sums([[1, 2, 3], [4, 5, 6]]))
+print(col_sums([[-1, 1], [10, -10]]))
+print(col_sums([[0, 0], [0, 0]]))
+print(col_sums([[1, 2], [3]]))
