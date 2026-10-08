@@ -20,7 +20,7 @@ print(normalize("ёжик, Ёлка",casefold=True,yo2e=True))
 print(normalize("Hello\r\nWorld",casefold=True,yo2e=False))
 print(normalize("  двойные   пробелы  ",casefold=False,yo2e=False))
 ```
-![]()
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab03/normalize.png)
 ## функция tokenize
 ```python
 import re
@@ -36,7 +36,7 @@ print(tokenize("по-настоящему круто"))
 print(tokenize("2025 год"))
 print(tokenize("emoji 😀 не слово"))
 ```
-![]()
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab03/tokenize.png)
 ## функция count_freq
 ```python
 def count_freq(tokens: list[str]) -> dict[str, int]:
@@ -56,7 +56,7 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
 print(count_freq(["a","b","a","c","b","a"]))
 print(count_freq(["bb","aa","bb","aa","cc"]))
 ```
-![]()
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab03/count_freq.png)
 ## функция top_n
 ```python
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
@@ -76,4 +76,4 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
 print(top_n(["a","b","a","c","b","a"],n=2))
 print(top_n(["bb","aa","bb","aa","cc"],n=2))
 ```
-![]()
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab03/top_n.png)
