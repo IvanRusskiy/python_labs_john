@@ -5,6 +5,8 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     '''
     делает всю строку по нижнему регистру, убирает лишние пробелы и невидимые символы
     '''
+    if type(text) != str:
+        raise TypeError('не тот тип данных')
     text_list = text.split()
     text = ''
     for txt in text_list:
@@ -14,6 +16,8 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
         text = text.casefold()
     if yo2e == True:
         text = text.replace('ё','е')
+    if text == '':
+        raise ValueError('пустая строка')
     return text
 ```
 ### тест-кесы:
@@ -49,6 +53,10 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
     '''
     возвращает словарь с подсчитанными частотами слов
     '''
+    if type(tokens) != list:
+        raise TypeError('не правильный тип входных данных')
+    if len(tokens) == 0:
+        raise ValueError('пустой список')
     res = [[i,0] for i in set(tokens)]
     for x in res:
         for i in tokens:
@@ -72,6 +80,10 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     '''
     возвращает список со словами по убыванию их частоты, при равенстве частоты по алфавиту слова
     '''
+    if type(freq) != list:
+            raise TypeError('не правильный тип входных данных')
+    if len(freq) == 0:
+        raise ValueError('пустой список')
     res = [[i,0] for i in set(freq)]
     for x in res:
         for i in freq:
