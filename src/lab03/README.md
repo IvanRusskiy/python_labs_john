@@ -2,6 +2,9 @@
 ## функция normalize
 ```python
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
+    '''
+    делает всю строку по нижнему регистру, убирает лишние пробелы и невидимые символы
+    '''
     text_list = text.split()
     text = ''
     for txt in text_list:
@@ -25,6 +28,9 @@ print(normalize("  двойные   пробелы  ",casefold=False,yo2e=False)
 ```python
 import re
 def tokenize(text: str) -> list[str]:
+    '''
+    возвращает список со всеми подстроками удовлетворяющими шаблону \w+(?:-\w+)*
+    '''
     text = normalize(text)
     return re.findall(r"\w+(?:-\w+)*", text)
 ```
@@ -40,6 +46,9 @@ print(tokenize("emoji 😀 не слово"))
 ## функция count_freq
 ```python
 def count_freq(tokens: list[str]) -> dict[str, int]:
+    '''
+    возвращает словарь с подсчитанными частотами слов
+    '''
     res = [[i,0] for i in set(tokens)]
     for x in res:
         for i in tokens:
@@ -60,6 +69,9 @@ print(count_freq(["bb","aa","bb","aa","cc"]))
 ## функция top_n
 ```python
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
+    '''
+    возвращает список со словами по убыванию их частоты, при равенстве частоты по алфавиту слова
+    '''
     res = [[i,0] for i in set(freq)]
     for x in res:
         for i in freq:
@@ -82,6 +94,10 @@ print(top_n(["bb","aa","bb","aa","cc"],n=2))
 text_stats = input()
 
 flag = 1
+'''
+при flag == 0 выводит по обычному
+при flag == 1 выводит таблицей
+'''
 
 import sys
 import os
@@ -94,6 +110,9 @@ sys.path.insert(0, parent_dir)
 from lib import text
 
 if text.top_n(text.tokenize(text_stats)) == []:
+     '''
+     выдает ошибку если нет слов в строке
+     '''
      raise ValueError("нет слов в строке") 
 
 if flag == 0:

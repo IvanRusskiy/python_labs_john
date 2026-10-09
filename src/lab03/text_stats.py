@@ -1,6 +1,10 @@
 text_stats = input()
 
 flag = 1
+'''
+при flag == 0 выводит по обычному
+при flag == 1 выводит таблицей
+'''
 
 import sys
 import os
@@ -13,6 +17,9 @@ sys.path.insert(0, parent_dir)
 from lib import text
 
 if text.top_n(text.tokenize(text_stats)) == []:
+     '''
+     выдает ошибку если нет слов в строке
+     '''
      raise ValueError("нет слов в строке") 
 
 if flag == 0:
