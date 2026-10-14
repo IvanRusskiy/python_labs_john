@@ -26,6 +26,7 @@ def tokenize(text: str) -> list[str]:
     text = normalize(text)
     return re.findall(r"\w+(?:-\w+)*", text)
 
+
 def count_freq(tokens: list[str]) -> dict[str, int]:
     '''
     возвращает словарь с подсчитанными частотами слов
