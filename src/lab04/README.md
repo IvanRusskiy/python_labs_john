@@ -51,49 +51,15 @@ python src/lab04/text_report.py \
 
 Вход `data/lab04/input.txt`:
 
-```
-Привет, мир! Привет!!!
-```
+![](/Users/mac/python_labs_john/images/lab04/io_txt_csv.png)
 
 Консоль:
 
-```
-Всего слов: 3
-Уникальных слов: 2
-Топ-5:
-привет:2
-мир:1
-```
+![](/Users/mac/python_labs_john/images/lab04/text_report1.png)
 
 `data/lab04/report.csv`:
 
-```
-word,count
-привет,2
-мир,1
-```
-
-## Пример ★ (несколько файлов)
-
-`a.txt`: `Привет мир`  
-`b.txt`: `Привет, привет!`
-
-`report_per_file.csv`:
-
-```
-file,word,count
-a.txt,мир,1
-a.txt,привет,1
-b.txt,привет,2
-```
-
-`report_total.csv`:
-
-```
-word,count
-привет,3
-мир,1
-```
+![](/Users/mac/python_labs_john/images/lab04/text_report2.png)
 
 ## Зависимости
 
