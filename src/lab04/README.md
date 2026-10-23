@@ -55,7 +55,7 @@ python src/lab04/text_report.py \
 
 Консоль:
 
-![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab04/report.png)
+![](https://github.com/IvanRusskiy/python_labs_john/blob/4624aa1f38e2019377ca06aa738a81ed0861ae90/images/lab04/text_report1.png)
 ![](https://github.com/IvanRusskiy/python_labs_john/blob/4624aa1f38e2019377ca06aa738a81ed0861ae90/images/lab04/text_report2.png)
 
 `data/lab04/report.csv`:
