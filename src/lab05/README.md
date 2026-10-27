@@ -61,7 +61,7 @@ python -m pip install openpyxl
 ---
 
 ## Задание A — JSON ↔ CSV
-
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab05/json%3C-%3Ecsv.png)
 ### `json_to_csv(json_path, csv_path)`
 
 - Читает непустой JSON-массив словарей.
@@ -114,7 +114,8 @@ Bob,25,Moscow
 ---
 
 ## Задание B — CSV → XLSX
-
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab05/csv-%3Exlsx.png)
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab05/excel.png)
 ### `csv_to_xlsx(csv_path, xlsx_path)`
 
 - Первая строка CSV — заголовок.
@@ -160,19 +161,3 @@ python -m src.lab05.csv_xlsx
 1. **JSON → CSV** — проверка заголовка и количества строк.
 2. **CSV → JSON** — сравнение ключей и количества объектов.
 3. **CSV → XLSX** — открытие файла в Excel/LibreOffice, проверка листа и ширины колонок.
-
----
-
-## Переиспользование кода из предыдущих ЛР
-
-- `ensure_parent_dir` из `src.lab04.io_txt_csv` (ЛР4) — создание родительских папок.
-- Модуль `src.lib.text` (ЛР3) доступен для дальнейших расширений (нормализация текста и т.п.).
-
----
-
-## Что сдавать
-
-1. Код в `src/lab05/*`.
-2. Файлы демонстрации в `data/lab05/samples/` и `data/lab05/out/`.
-3. README с командами запуска и описанием.
-4. `requirements.txt`.
