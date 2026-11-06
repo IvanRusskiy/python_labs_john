@@ -24,8 +24,8 @@
 Запуск выполняется **из корня репозитория** (там, где лежит папка `src/`), с помощью флага `-m`:
 
 ```bash
-python -m src.lab06.cli_text <подкоманда> [параметры]
-python -m src.lab06.cli_convert <подкоманда> [параметры]
+python3 -m src.lab06.cli_text <подкоманда> [параметры]
+python3 -m src.lab06.cli_convert <подкоманда> [параметры]
 ```
 
 ## Сценарии проверки
@@ -33,7 +33,7 @@ python -m src.lab06.cli_convert <подкоманда> [параметры]
 ### 1. cat — вывод файла с нумерацией
 
 ```bash
-python -m src.lab06.cli_text cat --input data/lab05/samples/people.csv -n
+python3 -m src.lab06.cli_text cat --input data/lab05/samples/people.csv -n
 ```
 
 Пример вывода:
@@ -50,7 +50,7 @@ python -m src.lab06.cli_text cat --input data/lab05/samples/people.csv -n
 Без флага `-n`:
 
 ```bash
-python -m src.lab06.cli_text cat --input data/lab05/samples/people.csv
+python3 -m src.lab06.cli_text cat --input data/lab05/samples/people.csv
 ```
 
 ```
@@ -75,7 +75,7 @@ Python - простой язык, а мир программирования б�
 ```
 
 ```bash
-python -m src.lab06.cli_text stats --input data/lab06/samples/text.txt --top 5
+python3 -m src.lab06.cli_text stats --input data/lab06/samples/text.txt --top 5
 ```
 
 Пример вывода:
@@ -94,9 +94,9 @@ python: 3
 ### 3. Конвертеры
 
 ```bash
-python -m src.lab06.cli_convert json2csv --in data/lab05/samples/people.json --out data/lab05/out/people.csv
-python -m src.lab06.cli_convert csv2json --in data/lab05/samples/people.csv --out data/lab05/out/people.json
-python -m src.lab06.cli_convert csv2xlsx --in data/lab05/samples/people.csv --out data/lab05/out/people.xlsx
+python3 -m src.lab06.cli_convert json2csv --in data/lab05/samples/people.json --out data/lab05/out/people.csv
+python3 -m src.lab06.cli_convert csv2json --in data/lab05/samples/people.csv --out data/lab05/out/people.json
+python3 -m src.lab06.cli_convert csv2xlsx --in data/lab05/samples/people.csv --out data/lab05/out/people.xlsx
 ```
 
 Пример вывода:
@@ -112,11 +112,11 @@ python -m src.lab06.cli_convert csv2xlsx --in data/lab05/samples/people.csv --ou
 Справка работает и для самой утилиты, и для каждой подкоманды:
 
 ```bash
-python -m src.lab06.cli_text --help
-python -m src.lab06.cli_text cat --help
-python -m src.lab06.cli_text stats --help
-python -m src.lab06.cli_convert --help
-python -m src.lab06.cli_convert json2csv --help
+python3 -m src.lab06.cli_text --help
+python3 -m src.lab06.cli_text cat --help
+python3 -m src.lab06.cli_text stats --help
+python3 -m src.lab06.cli_convert --help
+python3 -m src.lab06.cli_convert json2csv --help
 ```
 
 ## Обработка ошибок
