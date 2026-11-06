@@ -66,7 +66,7 @@ python3 -m src.lab06.cli_text stats --input data/lab06/samples/text.txt --top 5
 
 Пример вывода:
 
-1[](https://github.com/IvanRusskiy/python_labs_john/blob/b1d662d4e3792797f7e46b3f7a494c799d0b452d/images/lab06/img3.png)
+![](https://github.com/IvanRusskiy/python_labs_john/blob/b1d662d4e3792797f7e46b3f7a494c799d0b452d/images/lab06/img3.png)
 
 ### 3. Конвертеры
 
