@@ -38,14 +38,7 @@ python3 -m src.lab06.cli_text cat --input data/lab05/samples/people.csv -n
 
 Пример вывода:
 
-```
-1: name,age,city
-2: Alice,22,SPB
-3: Bob,25,Moscow
-4: Carlos,30,Kazan
-5: Dana,21,SPB
-6: Andrey,27,Novosibirsk
-```
+![](https://github.com/IvanRusskiy/python_labs_john/blob/b1d662d4e3792797f7e46b3f7a494c799d0b452d/images/lab06/img1.png)
 
 Без флага `-n`:
 
@@ -53,14 +46,7 @@ python3 -m src.lab06.cli_text cat --input data/lab05/samples/people.csv -n
 python3 -m src.lab06.cli_text cat --input data/lab05/samples/people.csv
 ```
 
-```
-name,age,city
-Alice,22,SPB
-Bob,25,Moscow
-Carlos,30,Kazan
-Dana,21,SPB
-Andrey,27,Novosibirsk
-```
+![](https://github.com/IvanRusskiy/python_labs_john/blob/b1d662d4e3792797f7e46b3f7a494c799d0b452d/images/lab06/img2.png)
 
 ### 2. stats — частоты слов
 
@@ -80,16 +66,7 @@ python3 -m src.lab06.cli_text stats --input data/lab06/samples/text.txt --top 5
 
 Пример вывода:
 
-```
-Всего слов: 33
-Уникальных слов: 27
-Топ-5:
-python: 3
-а: 2
-ежик: 2
-мир: 2
-привет: 2
-```
+1[](https://github.com/IvanRusskiy/python_labs_john/blob/b1d662d4e3792797f7e46b3f7a494c799d0b452d/images/lab06/img3.png)
 
 ### 3. Конвертеры
 
@@ -101,11 +78,7 @@ python3 -m src.lab06.cli_convert csv2xlsx --in data/lab05/samples/people.csv --o
 
 Пример вывода:
 
-```
-Готово: data/lab05/samples/people.json -> data/lab05/out/people.csv
-Готово: data/lab05/samples/people.csv -> data/lab05/out/people.json
-Готово: data/lab05/samples/people.csv -> data/lab05/out/people.xlsx
-```
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab06/img4.png)
 
 ### 4. Справка `--help`
 
