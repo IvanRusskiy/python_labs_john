@@ -18,7 +18,7 @@ python -m src.lab07.check
 python -m src.lab07.bench
 ```
 ![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab07/check.png)
-![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab07/check.png)
+![](https://github.com/IvanRusskiy/python_labs_john/blob/fc6f8eb0bae05b772217762da499a41563509331/images/lab07/bench.png)
 
 ## Результаты check.py
 
