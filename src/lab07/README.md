@@ -14,11 +14,11 @@
 ```bash
 # Проверка корректности
 python -m src.lab07.check
-![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab07/check.png)
 # Бенчмарк
 python -m src.lab07.bench
-![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab07/check.png)
 ```
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab07/check.png)
+![](https://github.com/IvanRusskiy/python_labs_john/blob/main/images/lab07/check.png)
 
 ## Результаты check.py
 
