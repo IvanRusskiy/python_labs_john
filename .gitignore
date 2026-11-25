@@ -2,3 +2,5 @@ __pycache__/
 *.py[cod]
 *$py.class
 prob.py
+.DS_Store
+requirements.txt
